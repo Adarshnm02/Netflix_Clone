@@ -1,4 +1,4 @@
-import {api_key} from './utilities/api_key'
+import { api_key } from './utilities/api_key'
 
 const requests = {
     now_playing: `https://api.themoviedb.org/3/movie/now_playing?api_key=${api_key}&language=en-US&page=1`,
