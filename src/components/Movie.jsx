@@ -1,9 +1,22 @@
 import React, { useState } from "react";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
-const Movie = ({ item, id }) => {
+import { useNavigate } from 'react-router-dom';
+
+const Movie = ({ item, id ,onClick}) => {
   const [like, setLike] = useState(false);
+  const navigate = useNavigate();
+
+  const handleMovieClick = (movie) => {
+    console.log(movie)
+    navigate(`/details`, { state: { movie } });
+  };
+  const handleLikeClick = (event) => {
+    event.stopPropagation(); 
+    setLike(!like);
+  };
+
   return (
-    <div
+    <div onClick={()=>handleMovieClick(item)}
       key={id}
       className="w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] inline-block cursor-pointer relative p-2"
     >
@@ -16,11 +29,11 @@ const Movie = ({ item, id }) => {
         <p className="white-space-normal text-xs md:text-sm font-bold flex justify-center items-center h-full text-center">
           {item?.title}
         </p>
-        <p>
+        <p onClick={handleLikeClick} className="absolute top-4 left-4">
           {like ? (
-            <FaHeart className="absolute top-4 left-4 text-gray-300" />
+            <FaHeart className="text-red-600" />
           ) : (
-            <FaRegHeart className="absolute top-4 left-4 text-gray-300" />
+            <FaRegHeart className="text-gray-300" />
           )}
         </p>
       </div>
