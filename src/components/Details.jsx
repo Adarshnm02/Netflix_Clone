@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, useLocation } from "react-router-dom";
 import axios from "axios";
 import YouTube from "react-youtube";
-import { api_key } from '../utilities/api_key'
+import { api_key } from "../utilities/api_key";
 
 
 function Details() {

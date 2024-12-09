@@ -22,7 +22,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+*.log
 .env
-api_key.js
-api_request_keys.js
-utilities 
