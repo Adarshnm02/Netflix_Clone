@@ -86,7 +86,7 @@ function Details() {
                   className="absolute top-2 right-2 bg-gray-800 text-white rounded-full p-2"
                   onClick={handleCloseClick}
                 >
-                  ✖
+                ✖
                 </button>
                 <YouTube videoId={trailerKey} className="w-full h-full" />
               </div>
