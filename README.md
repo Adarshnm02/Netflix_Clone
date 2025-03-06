@@ -51,7 +51,7 @@ The **Netflix Clone** replicates Netflix’s iconic UI by presenting different c
 
 ## Screenshots
 
-| Home Page                     | Row-Based Categories               | Featured Banner               |
+|SignUp Page                    |    Home Page           |       Row-Based Categories         |
 |------------------------------|------------------------------------|-------------------------------|
 ![Home Page](https://github.com/Adarshnm02/Netflix_Clone/assets/107073970/7cd1fe24-9d65-473d-8615-35750908c7a3) | ![Row-Based Categories](https://github.com/Adarshnm02/Netflix_Clone/assets/107073970/649d1da0-393d-47fd-be8a-00c42ba6017a) | ![Featured Banner](https://github.com/Adarshnm02/Netflix_Clone/assets/107073970/12bc4aa0-2c4c-4114-83bf-5d3813e56d90) |
 
